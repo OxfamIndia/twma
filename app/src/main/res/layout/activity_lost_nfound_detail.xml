@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.reportincident.LostNFoundDetail">
+
+    <include
+        layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topview"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/tvDesc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/cpName"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/status"/>
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/img_view"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topview"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/card_background"
+            android:text=""
+            android:padding="@dimen/_12sdp"
+            android:textSize="@dimen/_13sdp"
+            android:hint="Add Remarks..."
+            android:minHeight="@dimen/_90sdp"
+            android:gravity="top|left"
+            android:id="@+id/etRemarks"/>
+        <RelativeLayout
+            android:id                  =   "@+id/loginLayout"
+            android:layout_width        =   "wrap_content"
+            android:layout_height       =   "wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin    =   "@dimen/_6sdp">
+            <TextView
+                android:id                  =   "@+id/btn_update_status"
+                android:background          ="@drawable/button_background_enabled"
+                style                       =   "@style/custom_button_style"
+                android:layout_marginTop    =   "@dimen/_2sdp"
+                android:gravity="center"
+                android:textStyle           =   "bold"
+                android:text                =   "Update Status" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

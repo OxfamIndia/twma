@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="navigationModel"
+            type="com.infomatics.oxfam.twat.model.navigation.NavigationIconModel"/>
+    </data>
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:padding="@dimen/_12sdp">
+
+       <ImageView
+           android:layout_width="@dimen/_17sdp"
+           android:layout_height="@dimen/_17sdp"
+           android:id="@+id/imageView"
+           android:src="@{navigationModel.resourceId}"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/_14sdp"
+           android:fontFamily="sans-serif-medium"
+           android:text="@{navigationModel.title}"/>
+
+   </LinearLayout>
+</LinearLayout>
+
+</layout>

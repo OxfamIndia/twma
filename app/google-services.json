@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "886152756757",
+    "firebase_url": "https://oxfam-twma.firebaseio.com",
+    "project_id": "oxfam-twma",
+    "storage_bucket": "oxfam-twma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886152756757:android:0b0b73dc2db25cca94d81c",
+        "android_client_info": {
+          "package_name": "com.infomatics.oxfam.twat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886152756757-1edvgpp9arv60orilj18kbgqegig56jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8yKjR5QS2HfGdsaqEzyiiq24vmunVMyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886152756757-1edvgpp9arv60orilj18kbgqegig56jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

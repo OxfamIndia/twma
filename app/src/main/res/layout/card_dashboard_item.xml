@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="actions"
+            type="com.infomatics.oxfam.twat.model.dashboardhome.DashboardItemModel"/>
+    </data>
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_4sdp"
+        android:padding="@dimen/_6sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_58sdp"
+            android:src="@{actions.resourceId}"
+            android:id="@+id/action_image"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{actions.actionName}"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_6sdp"/>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

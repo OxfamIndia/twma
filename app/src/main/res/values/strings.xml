@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">TWMA</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="user_mobile">User Id</string>
+    <string name="user_password">Password</string>
+    <string name="is_coordinator">I am a coordinator</string>
+    <string name="login_button">Login</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="dashboard">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="roles">
+        <item>Select Role</item>
+        <item>Coordinator</item>
+        <item>Admin</item>
+        <item>ECM</item>
+        <item>Medic</item>
+        <item>Volunteer</item>
+    </string-array>
+
+    <string-array name="report_type">
+        <item>Select Report Type</item>
+        <item>Accident</item>
+        <item>Runner</item>
+    </string-array>
+
+    <string-array name="report_severity">
+        <item>Select Severity</item>
+        <item>Minor</item>
+        <item>Major</item>
+        <item>Critical</item>
+    </string-array>
+    <string-array name="lnf_report_type">
+        <item>Item Name</item>
+        <item>Accessory</item>
+        <item>Band</item>
+        <item>Bag</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="check_in">Check In</string>
+    <string name="check_ins">W. Check-ins</string>
+    <string name="check_outs">W. Check-outs</string>
+    <string name="retirements">W. Retirements</string>
+    <string name="total_teams">Teams</string>
+    <string name="check_in_stat">Check In Completion %age</string>
+    <string name="check_out_stat">Check Out Completion %age</string>
+    <string name="lost_and_found">Lost &amp; Found</string>
+    <string name="report_incident">Report Incident</string>
+    <string name="phone_directory">Event Directory</string>
+    <string name="tap_message">Tap Bands on back of device for %s</string>
+    <string name="tag_screen">Tag Screen</string>
+    <string name="enter_name_hint">Search by Role, Name, Number...</string>
+    <string name="search_by_bib_no">Search by Bib No</string>
+    <string name="search_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.</string>
+    <string name="bib_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="role">Role</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="error_f_name">Please enter First Name/</string>
+    <string name="error_l_name">Please enter Last Name</string>
+    <string name="error_contact_number">Please enter Contact Number.</string>
+    <string name="error_invalid_number">Please enter a valid Contact Number</string>
+    <string name="error_role">Please select Role</string>
+    <string name="report_type">Report Type</string>
+    <string name="spinner_severity">Severity</string>
+    <string name="write_report_message">Write report...</string>
+    <string name="add_picture">Add Picture</string>
+    <string name="report">Report Incident</string>
+    <string name="lostnfound">Lost And Found</string>
+    <string name="notification_activity">Notifications</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="error_userid">Please User Id</string>
+    <string name="password_changed">Password Changed successfully</string>
+    <string name="request_password">Request Password</string>
+    <string name="total_expected_teams">Team CheckIns</string>
+    <string name="total_team_check_outs">Team Checkouts</string>
+    <string name="register_team">Register Team</string>
+    <string name="map_bib_no">Tap band on back to link with bib no %s.</string>
+    <string name="incident_title">Incident Title</string>
+    <string name="reported_by">Reported By</string>
+    <string name="default_notification_channel_id">default_channel_id_oxfam</string>
+    <string name="fcm_message">OXFAM Admin</string>
+    <string name="company_name">Company/Institute Name</string>
+    <string-array name="pick_image_intent_text">Pick Image</string-array>
+
+    <string-array name="team_names">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+</resources>

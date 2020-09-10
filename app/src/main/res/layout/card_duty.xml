@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="user"
+            type="com.infomatics.oxfam.twat.model.dutyregister.User" />
+    </data>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:id="@+id/cb_duty_user"
+        android:text="@{user.firstName + ` ` + user.lastName}"
+        android:textSize="@dimen/_14sdp"/>
+
+</layout>

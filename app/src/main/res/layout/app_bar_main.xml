@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:title=""
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            </android.support.v7.widget.Toolbar>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/toolbar_text"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-medium"
+                    />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Offline"
+                        android:id="@+id/online_offline"
+                        android:visibility="gone"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp"
+                        android:background="@color/red"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/_8sdp"
+            android:visibility="gone"
+            android:paddingRight="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <com.infomatics.oxfam.twat.util.DonutProgress
+                        android:id="@+id/donut_progress"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        custom:donut_finished_stroke_width="3dp"
+                        custom:donut_unfinished_stroke_width="3dp"
+                        custom:donut_suffix="%"
+                        custom:donut_text_size="@dimen/_11sdp"
+                        custom:donut_text_color="@color/white"
+                        custom:donut_unfinished_color="@color/white"
+                        custom:donut_finished_color="@color/rounded_button_stroke1_ma"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_in_stat"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <com.infomatics.oxfam.twat.util.DonutProgress
+                        android:id="@+id/donut_progress2"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        custom:donut_finished_stroke_width="3dp"
+                        custom:donut_unfinished_stroke_width="3dp"
+                        custom:donut_suffix="%"
+                        custom:donut_progress="4"
+                        custom:donut_text_size="@dimen/_11sdp"
+                        custom:donut_text_color="@color/white"
+                        custom:donut_unfinished_color="@color/white"
+                        custom:donut_finished_color="@color/rounded_button_stroke1_ma"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_out_stat"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:padding="@dimen/_8sdp"
+                    android:id="@+id/level_one_stat"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/check_ins"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="sans-serif-light"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="123"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/check_outs"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="sans-serif-light"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:padding="@dimen/_8sdp"
+                    android:id="@+id/level_two_stat"
+                    android:layout_below="@id/level_one_stat"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/retirements"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="sans-serif-light"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="23"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total_teams"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="sans-serif-light"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="423"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/dashboard_holder_background">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:overScrollMode="never"
+                android:paddingBottom="@dimen/_70sdp"
+                android:id="@+id/recyclerView"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_alignParentBottom="true">
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="@color/hint_color"
+                   android:layout_marginBottom="@dimen/_3sdp"/>
+               <include
+                   layout="@layout/bottom_nav"/>
+           </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="CheckPoint 1"
+        android:id="@+id/cp1">
+    </item>
+    <item
+        android:title="CheckPoint 2"
+        android:id="@+id/cp2">
+    </item>
+    <item
+        android:title="CheckPoint 3"
+        android:id="@+id/cp3">
+    </item>
+    <item
+        android:title="CheckPoint 4"
+        android:id="@+id/cp4">
+    </item>
+    <item
+        android:title="CheckPoint 5"
+        android:id="@+id/cp5">
+    </item>
+    <item
+        android:title="CheckPoint 6"
+        android:id="@+id/cp6">
+    </item>
+    <item
+        android:title="CheckPoint 7"
+        android:id="@+id/cp7">
+    </item>
+    <item
+        android:title="CheckPoint 8"
+        android:id="@+id/cp8">
+    </item>
+    <item
+        android:title="CheckPoint 9"
+        android:id="@+id/cp9">
+    </item>
+    <item
+        android:title="Finish"
+        android:id="@+id/cp10">
+    </item>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_4sdp"
+    android:paddingBottom="@dimen/_4sdp"
+    android:background="@color/light_gray"
+    app:cardElevation="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_2sdp"
+    android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+    >
+
+    <com.infomatics.oxfam.twat.util.circletextview.CircleTextView
+        android:id="@+id/ctv"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/contact_name"
+            android:lines="1"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:id="@+id/contact_number"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/warmgrey"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

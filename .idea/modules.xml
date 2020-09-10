@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ansh2711-twma-0b1d37b8a6b2.iml" filepath="$PROJECT_DIR$/.idea/modules/ansh2711-twma-0b1d37b8a6b2.iml" group="ansh2711-twma-0b1d37b8a6b2" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ansh2711-twma-0b1d37b8a6b2/app" />
+      <module fileurl="file://$PROJECT_DIR$/circletextview/circletextview.iml" filepath="$PROJECT_DIR$/circletextview/circletextview.iml" group="ansh2711-twma-0b1d37b8a6b2/circletextview" />
+    </modules>
+  </component>
+</project>

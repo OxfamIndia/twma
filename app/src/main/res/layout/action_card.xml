@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="action"
+            type="com.infomatics.oxfam.twat.model.dashboardhome.DashboardItemModel"/>
+    </data>
+    <android.support.v7.widget.CardView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardElevation="@dimen/_4sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        android:padding="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/image"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@{action.resourceId}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{action.actionName}"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_below="@id/image"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

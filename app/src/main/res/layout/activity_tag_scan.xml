@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.tagscan.TagScanActivity">
+
+    <include
+        layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/retirement_screen">
+    <com.skyfishjy.library.RippleBackground
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="@color/red"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerInParent="true"
+            android:id="@+id/centerImage"
+            android:src="@drawable/band_details"/>
+    </com.skyfishjy.library.RippleBackground>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/tap_message"
+        android:textColor="@color/rounded_button_stroke1_ma"
+        android:textSize="@dimen/_11sdp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/tag"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tag_detail_screen"
+        android:visibility="gone"
+        android:layout_below="@id/header_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagDetails"
+            android:textSize="@dimen/_15sdp"
+            android:padding="@dimen/_16sdp"
+            android:textColor="@color/textColor"/>
+        <com.skyfishjy.library.RippleBackground
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rb_color="@color/green"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            android:id="@+id/animation_view"
+            app:rb_duration="3000"
+            app:rb_scale="6">
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/band_details"/>
+        </com.skyfishjy.library.RippleBackground>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/tap_message"
+            android:textColor="@color/rounded_button_stroke1_ma"
+            android:textSize="@dimen/_11sdp"
+            android:gravity="center"
+            android:id="@+id/tag_details_message"
+            android:layout_marginBottom="@dimen/_20sdp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
